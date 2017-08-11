@@ -1,0 +1,20 @@
+<div style="margin: 20px; padding: 20px; border: 2px solid red;">
+<h2>WEATHER</h2>
+	<select name="cities" ng-model="city">
+	  <option value="losAngeles">Los Angeles</option>
+	  <option value="minsk">Minsk</option>
+	  <option value="moscow">Moscow</option>
+	  <option value="dublin">Dublin</option>
+	  <option value="dakar">Dakar</option>
+	</select>
+	<button ng-click="sendReq()">add</button>
+	<div style="margin: 5px; padding: 5px; border: 2px solid blue;" ng-repeat="cityWeather in arrCityWeathers">
+		<div class="inline-block">
+			<!-- <img ng-src="{{icon}}"> -->
+			<p>Temperature: {{cityWeather.temperature}}</p>
+			<p>Time Zone: {{cityWeather.timezone}}</p>
+			<p>Weather: {{cityWeather.summary}}</p>
+			<button ng-click="removeWeather(cityWeather.timezone)">remove</button>
+		</div>
+	</div>
+</div>

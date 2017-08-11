@@ -1,0 +1,11 @@
+<div>	
+	<div ng-transclude></div>
+	<h1>Inside template title: {{title}}</h1>
+	<button class="change-title" ng-click="applyt(title)">add + to title as string</button>
+	<p>hello from template2.html</p>
+	<hr>
+	<!-- ----------------------------------------------- emit broadcast events ---------------------------------------- -->
+		<h1>Value emmitted in sibling custom event: {{siblingCustomEmittedValue}}</h1>
+		<h1>Value broadcasted in sibling custom event: {{siblingCustomBroadcastedValue}}</h1>
+		<!-- -------------------------------------------------------------------------------------------------------------- -->
+</div>

@@ -1,0 +1,14 @@
+<div>
+	<h3>Factory  vs Service vs Provider</h3>
+	<p>New fucntion: <button ng-click="greet()">greet</button></p>
+	<p ng-repeat="mess in arr">{{mess}}</p>
+	<input type="text"  ng-model="temp" name="">
+	<button ng-click="change(temp)">change text</button>
+	<hr>
+	<input type="text" ng-model="task" ng-keyup="saveToLocalStorage(task)" name="">
+	<button ng-click="reset()">reset</button>
+	<h3>This from localStorage:</h3>
+	<ul>
+	<li contenteditable="true" ng-repeat="item in saved track by $index">{{item}}</li>
+	</ul>
+</div>
